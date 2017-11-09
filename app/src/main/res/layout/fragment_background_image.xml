@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.deitel.doodlz.BackGroundImage">
+    tools:context="com.deitel.doodlz.BackgroundImageFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

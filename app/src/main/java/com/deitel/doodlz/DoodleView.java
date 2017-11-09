@@ -2,13 +2,16 @@
 // Main View for the Doodlz app.
 package com.deitel.doodlz;
 
+import android.graphics.Picture;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
+import android.graphics.drawable.Drawable;
 import android.provider.MediaStore;
 import android.support.v4.print.PrintHelper;
 import android.util.AttributeSet;
@@ -19,6 +22,11 @@ import android.widget.Toast;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static com.deitel.doodlz.R.id.bottom;
+import static com.deitel.doodlz.R.id.left;
+import static com.deitel.doodlz.R.id.right;
+import static com.deitel.doodlz.R.id.top;
 
 // custom View for drawing
 public class DoodleView extends View {
@@ -73,6 +81,8 @@ public class DoodleView extends View {
 
    public void setBackgroundColor(int color) {
      //  paintScreen.setColor(color);
+
+
        bitmapCanvas.drawColor(color);
      //  bitmapCanvas.drawColor(paintScreen.getColor());
 
@@ -80,6 +90,30 @@ public class DoodleView extends View {
    }
 
 
+   public void setBackgroundImage()
+   {
+
+      // Drawable d = getResources().getDrawable(R.drawable.image1);
+
+      // Point screenPts = new Point();
+     //  bitmapCanvas.getProjection().toPixels(pointToDraw, screenPts);
+
+       Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.image1);
+
+   // bitmapCanvas.getClipBounds();
+
+       bitmapCanvas.drawBitmap(bmp,bitmapCanvas.getClipBounds(), bitmapCanvas.getClipBounds(), null); // 24 is the height of image
+      // bitmapCanvas.drawBitmap(bmp,0,0,null);
+
+      // bitmap.get
+       //bitmapCanvas.dr
+       //return true;
+
+      // d.setBounds(left, top, right, bottom);
+      // bitmapCanvas.draw
+
+      // d.draw(bitmapCanvas);
+   }
 
    // return the painted line's color
    public int getDrawingColor() {

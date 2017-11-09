@@ -36,7 +36,7 @@ public class BackgroundColorFragment extends android.support.v4.app.DialogFragme
         builder.setView(colorDialogView); // add GUI to dialog
 
         // set the AlertDialog's message
-        builder.setTitle(R.string.title_color_dialog);
+        builder.setTitle(R.string.title_back_groundcolor_dialog);
 
         // get the color SeekBars and set their onChange listeners
         alphaSeekBar = (SeekBar) colorDialogView.findViewById(
@@ -65,7 +65,7 @@ public class BackgroundColorFragment extends android.support.v4.app.DialogFragme
         blueSeekBar.setProgress(Color.blue(color));
 
         // add Set Background Color Button
-        builder.setPositiveButton(R.string.button_set_color,
+        builder.setPositiveButton(R.string.button_set_background_color,
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         doodleView.setBackgroundColor(color);

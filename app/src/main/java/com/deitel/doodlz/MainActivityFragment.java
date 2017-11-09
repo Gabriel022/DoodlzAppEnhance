@@ -166,6 +166,14 @@ public class MainActivityFragment extends Fragment {
           case R.id.backgroundColor:
               BackgroundColorFragment backgroundColor = new BackgroundColorFragment();
               backgroundColor.show(getFragmentManager(), "background color");
+              return true;
+          case R.id.backgroundImage:
+              //BackgroundImageFragment backgroundImage = new BackgroundImageFragment();
+              doodleView.setBackgroundImage();
+
+            //  backgroundImage.show(getFragmentManager(), "Background Image");
+
+
 
       }
 
