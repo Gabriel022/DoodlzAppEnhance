@@ -88,7 +88,7 @@ public class DoodleView extends View {
 
        invalidate();
    }
-
+//hello
 
    public void setBackgroundImage()
    {
